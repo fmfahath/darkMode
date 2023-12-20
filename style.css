@@ -5,10 +5,28 @@
     font-family: 'Poppns',  sans-serif;
 }
 
+:root{
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+    --logo-color: #ff4321;
+    --font-color: #606163; 
+}
+
+.dark-theme{
+    --primary-color: #000106;
+    --secondary-color: #fff;
+    --font-color: #fff;
+}
+
+#darkMode-icon{
+    width: 30px;
+    cursor: pointer;
+}
+
 .hero{
     width: 100%;
     height: 100vh;
-    background-color: #edf2fc;
+    background-color: var(--primary-color);
     position: relative;
 }
 
@@ -24,10 +42,11 @@ nav{
 .logo{
     width: 100px;
     cursor: pointer;
-
 }
 nav ul{
     list-style-type: none;
+    flex: 1;
+    text-align: right;
 }
 
 nav ul li{
@@ -39,11 +58,11 @@ nav ul li{
 nav ul li a{
     font-size: 20px;
     text-decoration: none;
-    color: #606163;
+    color: var(--font-color);
 }
 
 nav ul li a:hover{
-    color: #ff4321;
+    color: var(--logo-color);
 }
 
 .info{
@@ -54,35 +73,35 @@ nav ul li a:hover{
 
 .info h1{
     font-size: 60px;
+    color: var(--font-color);
 }
 
 .info span{
-    color: #ff4321;
+    color: var(--logo-color);
 }
 
 .info p{
     font-size: 20px;
     margin: 20px 0 30px;
     line-height: 25px;
+    color: var(--font-color);
 }
 
 .info a{
     display: inline-block;
-    /* margin-top: 5px; */
     padding: 10px 18px;
-    background-color: #212121;
-    color: #fff;
+    background-color: var(--secondary-color);
+    color:var(--primary-color);
     text-decoration: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .info a:hover{
-    color: #ff4321;
+    color:var(--logo-color);
 }
 
 .img-box{
-    /* background-color: aquamarine; */
     width: 45%;
     height: 80%;
     position: absolute;
@@ -108,7 +127,6 @@ nav ul li a:hover{
 }
 
 .links{
-    /* background-color: aquamarine; */
     position: absolute;
     bottom: 5%;
     left: 9%;
@@ -117,9 +135,9 @@ nav ul li a:hover{
 .links a{
     font-size: 30px;
     margin-left: 20px;
-    color: #606163;
+    color: var(--font-color);
 }
 
 .links a:hover{
-    color: #ff4321;
+    color: var(--logo-color);
 }
