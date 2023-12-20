@@ -45,3 +45,38 @@ nav ul li a{
 nav ul li a:hover{
     color: #ff4321;
 }
+
+.info{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.info h1{
+    font-size: 60px;
+}
+
+.info span{
+    color: #ff4321;
+}
+
+.info p{
+    font-size: 20px;
+    margin: 20px 0 30px;
+    line-height: 25px;
+}
+
+.info a{
+    display: inline-block;
+    /* margin-top: 5px; */
+    padding: 10px 18px;
+    background-color: #212121;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info a:hover{
+    color: #ff4321;
+}
