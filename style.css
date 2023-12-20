@@ -106,3 +106,20 @@ nav ul li a:hover{
 .img-box:hover .front-img{
     left: 54%;
 }
+
+.links{
+    /* background-color: aquamarine; */
+    position: absolute;
+    bottom: 5%;
+    left: 9%;
+}
+
+.links a{
+    font-size: 30px;
+    margin-left: 20px;
+    color: #606163;
+}
+
+.links a:hover{
+    color: #ff4321;
+}
